@@ -67,8 +67,8 @@ describe('LoginService', () => {
             group: 'B'
         };
         storageServiceMock.getItem.and.returnValue(userDataFromStorage);
-
         expect(service.getUser()).toEqual(userDataFromStorage);
+
         storageServiceMock.getItem.and.returnValue(null);
         const anotherUser: User = {
             name: 'Daenerys Targaryen',

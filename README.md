@@ -1,3 +1,8 @@
+
+##### Current Angular version:
+
+[![npm version](https://badge.fury.io/js/%40angular%2Fcore.svg)](https://www.npmjs.com/~angular)
+
 # AngularLoginModule
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.

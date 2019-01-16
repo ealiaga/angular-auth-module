@@ -25,11 +25,11 @@ export class StorageService {
                     localStorage.setItem(`${token}-${key}`, valueToStore);
                 });
         } else {
-            localStorage.setItem(value, value);
+            localStorage.setItem(token, value);
         }
     }
 
-    getItem(key: string) {
+    getItem(key: string): any {
         const storedValue = localStorage.getItem(key);
         if (this.serializedKeys.includes(key)) {
             return JSON.parse(storedValue);
